@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/hover-min.css" />
+  <link rel="stylesheet" href="./assets/css/buttons.css" />
+  <title>>BD Paradisio - Accueil</title>
+</head>
+
+<body class="bodyColor">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Container wrapper -->
+    <div class="container">
+
+      <!-- Navbar brand-->
+      <a class="hvr-pulse navbar-brand textGradient" href="./index.html">BD Paradisio!</a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="hvr-wobble-horizontal nav-link active" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="hvr-wobble-horizontal nav-link" href="./boutique.html">Boutique</a>
+          </li>
+          <!-- Login - Button trigger modal -->
+          <div class="row">
+            <div class="col-5 text-center">
+              <button type="button" class="hvr-pulse-grow btnToon btn-outline-primary mt-1 py-1" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Connexion
+              </button>
+            </div>
+          </div>
+          <!-- /Login - Button trigger modal-->
+        </ul>
+        <!-- /Left links -->
+
+        <!-- Message for changing color-->
+        <div class="messageColor text-white text-center">
+          <h6> Changez de chemise :</h6>
+        </div>
+        <!-- /Message for changing color-->
+
+        <!-- Buttons for changing color -->
+        <div class="text-center mb-2 mb-lg-0 mx-4 mx-lg-2">
+          <button type="button" class="hvr-bounce-out btn btn-outline-light" onclick="colorWhite()" id="btnWhite">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-warning" onclick="colorOrange()" id="btnOrange">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-danger" onclick="colorRed()" id="btnRed">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-success" onclick="colorGreen()" id="btnGreen">
+          </button>
+        </div>
+        <!-- /Buttons for changing color -->
+
+        <!-- Search form -->
+        <div class="col-6 col-lg-3">
+          <form class="d-flex input-group">
+            <input type="search" class="form-control" placeholder="Votre requête" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="button" data-bs-ripple-color="dark">
+              Chercher
+            </button>
+          </form>
+        </div>
+        <!-- /Search form -->
+      </div>
+      <!-- /Collapsible wrapper -->
+    </div>
+    <!-- /Container wrapper -->
+  </nav>
+  <!-- /Navbar -->
+
+  <!-- Carousel-->
+  <div class="container">
+    <div class="row mb-5 animate__animated animate__fadeInDownBig" id="carouselContent">
+      <div class="col">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/carousel/carousel01.webp" class="d-block w-100" alt="image decorative 1">
+              <div class="carousel-caption">
+                <div class="mask d-none d-lg-block w-50">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white m-3">
+                      <!-- Logo Animated-->
+                      <a class="hvr-buzz d-sm-none d-md-block mx-2" href="#"><img
+                          src="./assets/images/carousel/logo3.webp" class="carouselLogo"></a>
+                      <!-- /Logo Animated-->
+                      <h4 class="textGradient mb-3">Une multitude de BDs historiques</h4>
+                    </div>
+                  </div>
+                </div>
+                <!--Shop Button Animated-->
+                <div class="wrapper">
+                  <a class="cta" href="./boutique.html">
+                    <span class="textGradient">BOUTIQUE</span>
+                    <span>
+                      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path class="one"
+                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="two"
+                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="three"
+                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <!--/Shop Button Animated-->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carousel/carousel02.webp" class="d-block w-100" alt="image decorative 2">
+              <div class="carousel-caption">
+                <div class="mask d-none d-lg-block w-50">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white m-3">
+                      <!-- Logo Animated-->
+                      <a class="hvr-buzz d-sm-none d-md-block mx-2" href="#"><img
+                          src="./assets/images/carousel/logo3.webp" class="carouselLogo"></a>
+                      <!-- /Logo Animated-->
+                      <h4 class="textGradient mb-3">Asterix, Luky Luke et consors</h4>
+                    </div>
+                  </div>
+                </div>
+                <!--Shop Button Animated-->
+                <div class="wrapper">
+                  <a class="cta" href="./boutique.html">
+                    <span class="textGradient">BOUTIQUE</span>
+                    <span>
+                      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path class="one"
+                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="two"
+                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="three"
+                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <!--/Shop Button Animated-->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carousel/carousel03.webp" class="d-block w-100" alt="image decorative 3">
+              <div class="carousel-caption">
+                <div class="mask d-none d-lg-block w-50">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white m-3">
+                      <!-- Logo Animated-->
+                      <a class="hvr-buzz d-sm-none d-md-block mx-2" href="#"><img
+                          src="./assets/images/carousel/logo3.webp" class="carouselLogo"></a>
+                      <!-- /Logo Animated-->
+                      <h4 class="textGradient mb-3">De l'aventure, de la romance!</h4>
+                    </div>
+                  </div>
+                </div>
+                <!--Shop Button Animated-->
+                <div class="wrapper">
+                  <a class="cta" href="./boutique.html">
+                    <span class="textGradient">BOUTIQUE</span>
+                    <span>
+                      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path class="one"
+                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="two"
+                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="three"
+                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <!--/Shop Button Animated-->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carousel/carousel04.webp" class="d-block w-100" alt="image decorative 4">
+              <div class="carousel-caption">
+                <div class="mask d-none d-lg-block w-50">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white m-3">
+                      <!-- Logo Animated-->
+                      <a class="hvr-buzz d-sm-none d-md-block mx-2" href="#"><img
+                          src="./assets/images/carousel/logo3.webp" class="carouselLogo"></a>
+                      <!-- /Logo Animated-->
+                      <h4 class="textGradient mb-3">Du rire à en pleurer!</h4>
+                    </div>
+                  </div>
+                </div>
+                <!--Shop Button Animated-->
+                <div class="wrapper">
+                  <a class="cta" href="./boutique.html">
+                    <span class="textGradient">BOUTIQUE</span>
+                    <span>
+                      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path class="one"
+                            d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="two"
+                            d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                          <path class="three"
+                            d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                            fill="#FFFFFF"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <!--/Shop Button Animated-->
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Carousel-->
+
+  <!-- Footer-->
+  <footer class=" text-white text-center text-lg-start">
+    <!-- Footer - Fiches BD -->
+    <div class="container text-center p-3">
+      <div class="row" id="bdFooterList">
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD01.webp" alt="Meilleur vente de la semaine"
+                class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">BEST SELLER</h5>
+              <p class="card-text">Meilleur vente de la semaine!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD02.webp" alt="Top recherche de la semaine"
+                class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">RARETE</h5>
+              <p class="card-text">Le plus recherché!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD03.webp" alt="Top méconnu" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">MECONNU</h5>
+              <p class="card-text">Le plus méconnu du moment!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD04.webp" alt="Top énigmatique" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">ENIGME</h5>
+              <p class="card-text">Le plus énigmatique!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD05.webp" alt="Top série TV" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">TELEVISION</h5>
+              <p class="card-text">Le plus télévisé d'entre tous!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD06.webp" alt="Top girly" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">GIRLS POWER</h5>
+              <p class="card-text">Le plus girly de sa génération!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Footer - Fiches BD-->
+
+    <!-- Footer - Copyright-->
+    <div class="copyright text-center p-3">
+      © 2021 Copyright: Made By DIGI GEEKS - With HTML5/CSS3/Bootstrap5/javaScript ES6 100% Vanilla!
+    </div>
+    <!-- /Footer - Copyright-->
+
+    <!-- Login - Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog text-dark">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Formulaire de connexion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Login in - Forms-->
+          <div class="modal-body">
+            <form class="row g-3" id="connection">
+              <div class="col-md-4">
+                <label for="firstName" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="firstName" value="Sponge Bob" required>
+              </div>
+              <div class="col-md-4">
+                <label for="lastName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="lastName" value="Square Pants" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Adresse Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+                    value="makingburgers@gmail.com" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="city" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="city" value="Bikini Bottom" required>
+              </div>
+              <div class="col-md-12">
+                <label for="inputPassword" class="form-label">Mot de passe</label>
+                <input type="password" class="form-label" name="password" id="password"
+                  placeholder="pensez à noter votre mdp" required />
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Je suis d'accord avec les termes et conditions
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Connexion</button>
+              </div>
+            </form>
+            <!-- /Login in - Forms-->
+            <!-- Login out - Forms-->
+            <form class="row g-3" id="disconnection">
+              <p id="user"></p>
+              <div class="col-md-2">
+                <button class="btn btn-primary" type="submit">Déconnexion</button>
+              </div>
+            </form>
+            <!-- /Login out - Forms-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Login - modal-->
+  </footer>
+  <!-- /Footer-->
+
+
+  <!-- Login JS-->
+  <script src="./assets/js/login.js"></script>
+  <!-- Colorize JS-->
+  <script src="./assets/js/colorize.js"></script>
+
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

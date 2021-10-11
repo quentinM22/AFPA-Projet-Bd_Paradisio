@@ -1,0 +1,111 @@
+/* Table responsive */
+
+@media all and (max-width: 1230px) {
+
+  table {
+    margin-bottom: 30px;
+    margin: 0;
+    padding: 25px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+.rtable {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rtable,
+.rtable--flip thead {
+  /* // optional - enable iOS momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+}
+
+.rtable th {
+  /* font-size: 11px; */
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 0px solid #ffffff;
+}
+
+.rtable--flip {
+  border-style: none;
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  border-left: 0;
+}
+
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+}
+
+/* Table */
+
+/* table {
+  margin-bottom: 10px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(26, 76, 99, 30%);
+}
+
+tr:hover {
+  background-color: rgba(189, 89, 8, 0.589);
+  color: white;
+}
+
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgb(65, 113, 136);
+  color: white;
+} */

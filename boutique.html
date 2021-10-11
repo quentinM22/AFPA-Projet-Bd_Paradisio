@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/hover-min.css" />
+  <link rel="stylesheet" href="./assets/css/buttons.css" />
+  <link rel="stylesheet" href="./assets/css/boutique.css" />
+  <link rel="stylesheet" href="./assets/css/cartTable.css" />
+  <title>>BD Paradisio - Boutique</title>
+</head>
+
+<body class="bodyColor">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Container wrapper -->
+    <div class="container">
+
+      <!-- Navbar brand-->
+      <a class="hvr-pulse navbar-brand textGradient" href="./index.html">BD Paradisio!</a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+      <!-- /Toggle button -->
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="hvr-wobble-horizontal nav-link" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="hvr-wobble-horizontal nav-link active" href="./boutique.html">Boutique</a>
+          </li>
+          <!-- Login - Button trigger modal -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 text-center">
+              <button type="button" class="hvr-pulse-grow btnToon btn-outline-primary mt-1 py-1" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Connexion
+              </button>
+            </div>
+          </div>
+          <!-- /Login - Button trigger modal-->
+        </ul>
+        <!-- /Left links -->
+
+        <!--Toggle Cart -->
+        <div class="col-sm-12 col-lg-2 text-center text-white" id="totalPrice">
+          <label>Total <label id="totalNavbar"></label>
+            <label> €</label>
+            <img src="./assets/images/navbar/cart.webp" class="imgCart hvr-bounce-out btn btn-outline-primary mx-2"
+              id="toggleCart" alt="image du panier">
+        </div>
+        <!--/Toggle Cart -->
+
+        <!-- Buttons for changing color -->
+        <div class="text-center mb-2 mb-lg-0 mx-4 mx-lg-2">
+          <button type="button" class="hvr-bounce-out btn btn-outline-light" onclick="colorWhite()" id="btnWhite">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-warning" onclick="colorOrange()" id="btnOrange">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-danger" onclick="colorRed()" id="btnRed">
+          </button>
+          <button type="button" class="hvr-bounce-out btn btn-outline-success" onclick="colorGreen()" id="btnGreen">
+          </button>
+        </div>
+        <!-- /Buttons for changing color -->
+
+        <!-- Search form -->
+        <div class="col-sm-12 col-lg-3 text-center">
+          <form class="d-flex input-group">
+            <input type="search" class="form-control" placeholder="Votre requête" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="button" data-bs-ripple-color="dark">
+              Chercher
+            </button>
+          </form>
+        </div>
+        <!-- /Search form -->
+      </div>
+      <!-- /Collapsible wrapper -->
+    </div>
+    <!-- /Container wrapper -->
+  </nav>
+  <!-- /Navbar -->
+
+  <!--Shop-->
+  <div class="container text-white" id="">
+    <div class="row" id="shop">
+      <!--Shop - Content-->
+      <div class="animate__animated animate__backInLeft row col-sm-12 col-lg-8 px-3" id="shopContent">
+        <!--Shop - Forms Selectors-->
+        <div class="well form-inline col-sm-12 col-lg-4 mt-3" id="">
+          <div class="text-center">
+            <h1>Liste des BD</h1>
+          </div>
+          <div class="col-sm-6 col-lg-11 mb-1 py-2 text-center" id="selector">
+            <div class="col-sm-8 col-lg-12 px-2 text-center" id="messageId">
+              <label for="id">Albums</label><br />
+              <input type="range" class="range-selector" id="id" name="album" value="1" min="1" max="60"
+                title="Vous pouvez utiliser les fleches clavier pour faire votre selection" required>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-11 mb-4 mx-0 text-center" id="">
+            <h6>Clavier: fleches / Souris: molette</h6>
+          </div>
+          <div class="col-sm-12 col-md-8 mb-3  text-center" id="serieContent">
+            <label for="serie" class="form-label pt-2">Série</label>
+            <input type="text" class="form-control form-album" id="serie" readonly>
+          </div>
+          <div class="col-md-4 mb-3 text-center" id="numbContent">
+            <label for="numero" class="form-label pt-2">Album N°</label>
+            <input type="text" class="form-control form-album" id="numero" readonly>
+          </div>
+          <div class="col-md-8 mb-3 text-center" id="titleContent">
+            <label for="titre" class="form-label pt-2">Titre</label>
+            <input type="text" class="form-control form-album" id="titre" readonly>
+          </div>
+          <div class="col-md-8 mb-3 text-center" id="authorContent">
+            <label for="auteur" class="form-label pt-2">Auteur</label>
+            <input type="text" class="form-control form-album" id="auteur" readonly>
+          </div>
+          <div class="col-sm-12 col-md-5 mb-3 text-center" id="priceContent">
+            <label for="prix" class="form-label pt-2">Prix</label>
+            <input type="text" class="form-control form-album" id="prix" readonly>
+          </div>
+          <div class="col-sm-12 col-md-5 mb-3 mx-2 text-center" id="quantityContent">
+            <label for="qte" class="form-label pt-2">Quantité</label>
+            <input type="number" class="form-control form-album" id="qte" value="1" min="1">
+          </div>
+          <div class="col-md-12 mb-4 text-center" id="">
+            <button class="btnToon btn-primary btn-lg" type="submit" onclick="ajouter()" id="addPanier">
+              Ajoutez au panier</button>
+          </div>
+        </div>
+        <!--/Shop - Forms Selectors-->
+
+
+        <!--Shop - Images-->
+        <div class="card col-sm-12 col-lg-8 sm-mx-0 mt-3 px-0 mb-3" id="imgCard">
+          <img src="./assets/images/shop/welcome.webp" class="card-img-top" id="albumImage">
+
+          <!-- Audio Player-->
+          <div class="card-body text-center">
+            <audio class="audio w-50" controls preload="metadata" loop>
+              <source src="./assets/audio/bensound-ukulele.mp3" type="audio/mp3">
+              Votre navigateur ne
+              semble pas supporter ce fichier audio</audio>
+          </div>
+          <!-- /Audio Player---->
+
+        </div>
+        <!--/Shop - Images-->
+      </div>
+      <!--/Shop - Content-->
+
+      <!--Shop - Cart-->
+      <div class="col-sm-12 col-lg-4 mx-sm-1 animate__animated animate__slideInLeft" id="cart">
+
+        <!-- Cart Title -->
+        <div class="text-center mt-3">
+          <h1>Votre panier</h1>
+        </div>
+        <!-- /Cart Title -->
+
+        <!-- Cart Content-->
+        <div class=" col-sm-11 col-lg-11 mb-1 py-2 text-center" id="cartContent">
+          <table id="tableau" class="table rtable rtable--flip text-white">
+            <thead>
+              <tr>
+                <th>Id Album</th>
+                <th>Qte</th>
+                <th>Prix</th>
+                <th>Prix/ligne</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <!-- /Cart Content-->
+
+        <!-- Price Line -->
+        <div class="row my-5" id="priceLine">
+          <div class="col-md-5" id="totalPrice">
+            <label>Prix total</label> : <label id="prixTotal"></label>
+            <label> €</label>
+            <label id="nbreLignes" hidden>0</label>
+          </div>
+          <div class="col-md-3" id="promotion">
+            (-50%)
+          </div>
+          <div class="col-md-4" id="buy">
+            <a href="./boutique.html"><button type="button" class="hvr-pulse btnToon btn-primary"
+                id="btnBuy">Acheter</button></a>
+          </div>
+        </div>
+        <!-- /Price Line -->
+
+        <!-- Advertiser-->
+        <div class="text-center">
+          <img src="./assets/images/shop/pub1.webp" id="cartAd">
+        </div>
+        <!-- /Advertiser-->
+      </div>
+      <!--Shop - Cart-->
+    </div>
+  </div>
+  <!--/Shop-->
+
+  <!-- Footer-->
+  <footer class=" text-white text-center text-lg-start">
+    <!-- Footer - Fiches BD -->
+    <div class="container text-center p-3">
+      <div class="row" id="bdFooterList">
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD01.webp" alt="Meilleur vente de la semaine"
+                class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">BEST SELLER</h5>
+              <p class="card-text">Meilleur vente de la semaine!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD02.webp" alt="Top recherche de la semaine"
+                class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">RARETE</h5>
+              <p class="card-text">Le plus recherché!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD03.webp" alt="Top méconnu" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">MECONNU</h5>
+              <p class="card-text">Le plus méconnu du moment!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD04.webp" alt="Top énigmatique" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">ENIGME</h5>
+              <p class="card-text">Le plus énigmatique!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD05.webp" alt="Top série TV" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">TELEVISION</h5>
+              <p class="card-text">Le plus télévisé d'entre tous!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="card border-dark mb-4 mb-lg-0">
+            <a href="./boutique.html" class="stretched-link">
+              <img src="./assets/images/footer/footer_BD06.webp" alt="Top girly" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">GIRLS POWER</h5>
+              <p class="card-text">Le plus girly de sa génération!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Footer - Fiches BD-->
+
+    <!-- Footer - Copyright-->
+    <div class="copyright text-center p-3">
+      © 2021 Copyright: Made By DIGI GEEKS - With HTML5/CSS3/Bootstrap5/javaScript ES6 100% Vanilla!
+    </div>
+    <!-- /Footer - Copyright-->
+
+    <!-- Login - Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog text-dark">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Formulaire de connexion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Login in - Forms-->
+          <div class="modal-body">
+            <form class="row g-3" id="connection">
+              <div class="col-md-4">
+                <label for="firstName" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="firstName" value="Sponge Bob" required>
+              </div>
+              <div class="col-md-4">
+                <label for="lastName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="lastName" value="Square Pants" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Adresse Email</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+                    value="makingburgers@gmail.com" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="city" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="city" value="Bikini Bottom" required>
+              </div>
+              <div class="col-md-12">
+                <label for="inputPassword" class="form-label">Mot de passe</label>
+                <input type="password" class="form-label" name="password" id="password"
+                  placeholder="pensez à noter votre mdp" required />
+              </div>
+              <div class="col-md-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Je suis d'accord avec les termes et conditions
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Connexion</button>
+              </div>
+            </form>
+            <!-- /Login in - Forms-->
+            <!-- Login out - Forms-->
+            <form class="row g-3" id="disconnection">
+              <p id="user"></p>
+              <div class="col-md-2">
+                <button class="btn btn-primary" type="submit">Déconnexion</button>
+              </div>
+            </form>
+            <!-- /Login out - Forms-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Login - modal-->
+  </footer>
+  <!-- /Footer-->
+
+
+  <!-- Login JS-->
+  <script src="./assets/js/login.js"></script>
+  <!-- Colorize JS-->
+  <script src="./assets/js/colorize.js"></script>
+
+  <!-- BDs JS-->
+  <script src="./assets/js/albums.js"></script>
+  <script src="./assets/js/series.js"></script>
+  <script src="./assets/js/auteurs.js"></script>
+  <script src="./assets/js/boutique.js"></script>
+
+  <!-- Panier JS-->
+  <script src="./assets/js/panier.js"></script>
+  <script src="./assets/js/toggleCart.js"></script>
+
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+/************** Shop *************/
+#shop {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+}
+
+#shopContent {
+    background-color: rgba(0, 0, 0, 0.877);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #212529;
+    z-index: 2;
+}
+
+/************** I Selectors *************/
+#selector,
+#serieContent,
+#numbContent,
+#titleContent,
+#authorContent,
+#priceContent,
+#quantityContent {
+    background-color: #212529;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(231, 145, 16, 0.959);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+#selector {
+    overflow: hidden;
+    display: flex;
+}
+
+.form-album {
+    border-radius: 1px 1px 15px 15px;
+    margin: 2px;
+    text-align: center;
+}
+
+#messageId {
+    margin: auto;
+}
+
+.range-selector {
+    width: 80%;
+}
+
+/************** II Images and Audio *************/
+#imgCard {
+    background-color: rgba(231, 145, 16, 0.959);
+    border-style: groove;
+    border-width: 2px;
+    border-color: #212529;
+    border-radius: 30px;
+}
+
+#albumImage {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.089);
+    max-height: 700px;
+    border-radius: 30px;
+}
+
+.audio {
+    height: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.226);
+    border-radius: 30px;
+    background-color: #1a2025;
+}
+
+/************** III Cart *************/
+#cart {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #212529;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#cartContent {
+    background-color: #212529;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(231, 145, 16, 0.959);
+    border-radius: 15px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.table {
+    background-color: transparent;
+    border-style: none;
+    /* width: auto; */
+}
+
+#priceLine {
+    background-color: #21252900;
+    margin-left: 25px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(255, 255, 255, 0.247);
+}
+
+#totalPrice {
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#promotion {
+    padding: 0px;
+}
+
+#buy {
+    border-style: solid;
+    border-width: 0px;
+    padding: 0px;
+}
+
+#cartAd {
+    width: 100%;
+    z-index: 1;
+    bottom: 1rem;
+}

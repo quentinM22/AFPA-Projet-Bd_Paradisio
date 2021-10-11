@@ -1,0 +1,34 @@
+Édouard tient à vous rappeler les besoins :
+
+    De présenter les BD avec quelques infos, ex : couverture, titre, prix, ...
+
+    De filtrer l'affichage à la demande, ex : par auteur, par série, ...
+
+    D'ajouter ou retirer facilement une BD dans un panier d'achat
+
+    De garder sous les yeux le contenu simplifié du panier
+
+    De pouvoir voir le détail du panier pour validation
+
+    Toutes autres fonctionnalités que vous jugerez intéressantes
+
+Ceci en Mobile first, sans oublier pour autant les PC de bureau. 
+Un visuel sympa, ergonomique, facile d'utilisation.
+
+Une précision importante : Édouard a remarqué que les ventes de bandes 
+dessinées sont plus importantes lorsque la météo est mauvaise, 
+il vous demande donc de gérer un encart météo.
+
+Il vous faudra trouver un site proposant une API météo et l'interroger 
+avec des requêtes Ajax/jQuery pour récupérer les informations.
+
+Après avoir contacté l'équipe qui gère le site actuel d'Édouard, 
+ils confirment qu'ils prendront en charge la base de données 
+mais pas tout de suite car trop de boulot !
+
+En attendant, ils fournissent une archive "BD.zip" qui contient 
+les images et des données (BD, séries, auteurs) pour que vous puissiez avancer dans les dév. 
+Ils disent que des développeurs sauront s'en servir.
+
+Ils ont joint également un trombinoscope de l'équipe qui fonctionne sur le même principe. 
+À leurs têtes, les gars ont l'air d'être des pointures en dév !
